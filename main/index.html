@@ -12,7 +12,7 @@
         href="../components/core-toolbar/core-toolbar.html">
         <link rel="import"
           href="../components/paper-tabs/paper-tabs.html">
-          <link rel="import" href="post-list.html">
+          <link rel="import" href="result-list.html">
           <style>
           html,body {
           height: 100%;
@@ -55,23 +55,23 @@
         <body unresolved>
           <core-header-panel>
           <core-toolbar>
-          <paper-tabs id="tabs" selected="all" self-end>
-          <paper-tab name="all">All</paper-tab>
+          <paper-tabs id="tabs" selected="search" self-end>
+          <paper-tab name="search">Search</paper-tab>
         <paper-tab name="favorites">Favorites</paper-tab>
       </paper-tabs>
       </core-toolbar>
       <div class="container" layout vertical center>
-      <post-list show="all"></post-list>
+      <result-list show="all"></result-list>
     </div>
     </core-header-panel>
     <script>
     var tabs = document.querySelector('paper-tabs');
-    var list = document.querySelector('post-list');
+    var list = document.querySelector('result-list');
     tabs.addEventListener('core-select', function() {
     list.show = tabs.selected;
     });
     var registeredDomain = document.getElementsByClassName("dom-status").innerHTML = "registered";
-    registeredDomain.style.backgroundColor = 'red';
+    // registeredDomain.style.backgroundColor = 'red';
     </script>
   </body>
 </html>
