@@ -1,0 +1,20 @@
+{
+  "name": "speech-transcript",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.0",
+    "speech-mic": "Polymer/speech-mic#^0.5.0"
+  },
+  "version": "0.5.0",
+  "homepage": "https://github.com/Polymer/speech-transcript",
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.0",
+    "commit": "0fa730f9fe7cb85c058797a1c249e685268e7019"
+  },
+  "_source": "git://github.com/Polymer/speech-transcript.git",
+  "_target": "~0.5.0",
+  "_originalSource": "Polymer/speech-transcript",
+  "_direct": true
+}

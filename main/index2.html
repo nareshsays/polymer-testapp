@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Polymer Test App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="../components/webcomponentsjs/webcomponents.js">
+    </script>
+    <script src="js/app.js"></script>
+    <link rel="import" href="elements.html">
+    <link rel="import" href="result-list.html">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body unresolved fullbleed layout vertical>
+    <core-drawer-panel id="drawerPanel">
+      <core-header-panel drawer>
+        <core-toolbar>Menu</core-toolbar>
+        <core-menu selected="1">
+          <core-item label="one"></core-item>
+          <core-item label="two"></core-item>
+          <core-item label="three"></core-item>
+        </core-menu>
+      </core-header-panel>
+      <core-header-panel main mode="waterfall-tall">
+        <core-toolbar id="myToolBar">
+      
+        <div id="appTitle">Verisign Name Suggestions</div>
+        <div class="bottom" id="ns-search">
+          <core-card id="core_card" layout vertical>
+      <core-field id="core_field" icon="search" theme="core-light-theme" center horizontal layout>
+        <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+        <input id="input" value="" placeholder="type something..." is="core-input">
+        <speech-mic id="speech_mic"></speech-mic>
+      </core-field>
+    </core-card>
+        </div>
+        
+      </core-toolbar>
+      <div class="container" layout vertical center>
+  <result-list show="all"></result-list>
+</div>
+      </core-header-panel>
+    </core-drawer-panel>
+    
+
+</body>
+</html>

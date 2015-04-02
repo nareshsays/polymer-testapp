@@ -28,5 +28,35 @@
     "score": "787",
     "source": "related",
     "status": "available"
+  },
+    {
+    "name": "SoccerTeam.com",
+    "score": "1000",
+    "source": "input",
+    "status": "registered"
+  },
+  {
+    "name": "SoccerTeam.tv",
+    "score": "966",
+    "source": "input",
+    "status": "available"
+  },
+    {
+    "name": "SoccerTeam.cc",
+    "score": "934",
+    "source": "input",
+    "status": "available"
+  },
+  {
+    "name": "TheSoccerTeam.net",
+    "score": "812",
+    "source": "basic",
+    "status": "available"
+  },
+  {
+    "name": "SoccerWork.net",
+    "score": "787",
+    "source": "related",
+    "status": "available"
   }
 ]
