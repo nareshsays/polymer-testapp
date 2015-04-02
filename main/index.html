@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <script src="../components/webcomponentsjs/webcomponents.js">
     </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="import" href="../components/font-roboto/roboto.html">
     <link rel="import" href="../components/core-header-panel/core-header-panel.html">
     <link rel="import" href="../components/core-icon/core-icon.html">
@@ -72,7 +73,7 @@
     <core-card id="core_card" layout vertical>
       <core-field id="core_field" icon="search" theme="core-light-theme" center horizontal layout>
         <core-icon icon="search" id="core_icon"></core-icon>
-        <input id="input" value="{{ $.speech_mic.transcript }}" placeholder="type something..." is="core-input">
+        <input id="input" value="" placeholder="type something..." is="core-input">
         <speech-mic id="speech_mic"></speech-mic>
       </core-field>
     </core-card>
@@ -95,6 +96,8 @@ list.show = tabs.selected;
 var domainStatus = document.getElementsByClassName("dom-status");
 var registeredDomain = domainStatus.innerHTML = "registered";
 // registeredDomain.style.backgroundColor = 'red';
+// http://itebooks.herokuapp.com/
+var searchKey = document.getElemntById("input").value();
 </script>
 </body>
 </html>
